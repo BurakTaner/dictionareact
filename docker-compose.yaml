@@ -1,0 +1,44 @@
+version: '3'
+
+networks:
+  dev:
+    driver: bridge
+
+services:
+  backend:
+    image: "dictionareact-backend"
+    build:
+      context: ./dictionareact-backend/
+      dockerfile: Dockerfile
+    depends_on:
+      - "db"
+    ports:
+      - "3000:3000"
+    container_name: "dictionareact-backend"
+    networks:
+      - dev
+    environment:
+      - MONGOURI=mongodb://db:27017/dictionareact
+
+  frontend:
+    build:
+      context: ./dictionareact-frontend/
+      dockerfile: Dockerfile
+    depends_on:
+      - "db"
+    ports:
+      - "5173:5173"
+    container_name: "dictionareact-frontend"
+    networks:
+      - dev
+
+  db:
+    image: mongo:latest
+    container_name: "dictionareact-mongo"
+    networks:
+      - dev
+    volumes:
+      - "dictionary_data:/var/lib/mongodb/data"
+
+volumes:
+  dictionary_data:

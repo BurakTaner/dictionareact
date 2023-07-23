@@ -1,0 +1,22 @@
+section.search-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  background: #F5CBDC;
+}
+
+section .search {
+  width: 500px;
+  height: 50px;
+  box-shadow: 0px 0px 10px red;
+  background-color: #CBEBF7;
+  font-size:22.5px;
+}
+
+section .search:hover {
+ background-color: #FFFEDB86;
+}

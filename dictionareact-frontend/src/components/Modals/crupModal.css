@@ -1,0 +1,53 @@
+.modal form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  gap: 20px;
+}
+
+.modal .inp-div *{
+  display: block;
+  text-align: center;
+}
+
+.modal form button {
+  width: 200px;
+  height: 30px;
+  font-size: 1rem;
+  background-color: purple;
+  color:whitesmoke;
+}
+
+.modal form label, .modal form input {
+  font-size:1.2rem;
+}
+
+.modal-body h3 {
+  text-align: center;
+  padding-top:25px;
+  font-size: 1.5rem;
+}
+
+.errors {
+  list-style: none;
+  padding-left: 20px;
+  color: red;
+  font-size: 1.1rem;
+}
+
+.errors li {
+  margin: 5px auto;
+}
+
+.close {
+  font-size:30px;
+  margin-left:auto;
+}
+
+.close:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}

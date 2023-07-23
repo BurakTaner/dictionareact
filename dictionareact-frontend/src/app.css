@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.create-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 5px;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  background-color: rgba(35, 76, 120, 0.5);
+}
+
+.create-btn:hover {
+  background-color: rgba(30, 40, 100, 0.3);
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000061;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(56, 98, 32, 0.8);
+}

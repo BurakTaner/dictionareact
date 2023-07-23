@@ -1,0 +1,19 @@
+.inf-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 400px;
+  width: 500px;
+}
+
+.inf-descriptions {
+  list-style: none;
+  margin-top: 20px;
+  word-wrap: break-word;
+  padding:10px;
+}
+
+.inf-descriptions li{
+  margin: 10px auto;
+}
