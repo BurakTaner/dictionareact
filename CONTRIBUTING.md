@@ -1,0 +1,1 @@
+Hi, this project is a side project to learn about more about React and wants to make a fullstack application. It's not a fully functional but if they want to add something or fix something; please open a PR and a correspoding issue. I always welcome ^^
